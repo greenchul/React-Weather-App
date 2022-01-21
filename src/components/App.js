@@ -3,7 +3,7 @@ import React from "react";
 import propTypes from "prop-types";
 import LocationDetails from "./LocationDetails";
 
-function App({ forecast }) {
+const App = ({ forecast }) => {
   const { city, country } = forecast.location;
   return (
     <div className="App">
@@ -11,7 +11,7 @@ function App({ forecast }) {
       <LocationDetails city={city} country={country} />
     </div>
   );
-}
+};
 App.propTypes = {
   forecast: propTypes.shape({
     location: propTypes.shape({

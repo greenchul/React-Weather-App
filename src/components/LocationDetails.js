@@ -1,9 +1,10 @@
 import React from "react";
 import propTypes from "prop-types";
 
-function LocationDetails({ city, country }) {
-  return <h1>{`${city}, ${country}`}</h1>;
-}
+const LocationDetails = ({ city, country }) => {
+  return <h1 className="location-details">{`${city}, ${country}`}</h1>;
+};
+
 LocationDetails.propTypes = {
   city: propTypes.string.isRequired,
   country: propTypes.string.isRequired,
