@@ -5,7 +5,7 @@ import ForecastSummary from "../../components/ForecastSummary";
 describe("LocationDetails", () => {
   const singleForecast = {
     date: 12122022,
-    icon: "1234",
+    icon: "800",
     temperature: {
       max: 23,
       min: 18,
@@ -24,7 +24,7 @@ describe("LocationDetails", () => {
     );
     expect(getByText("Description: Cloudy")).toBeTruthy();
     expect(getByTestId("forecast-icon")).toHaveClass("forecast-summary__icon");
-    expect(getByText("Max temp: 23")).toBeTruthy();
+    expect(getByText("Temp: 23")).toBeTruthy();
     expect(getByText("Description: Cloudy")).toHaveClass(
       "forecast-summary__description"
     );

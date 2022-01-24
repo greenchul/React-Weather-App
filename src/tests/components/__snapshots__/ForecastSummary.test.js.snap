@@ -9,12 +9,12 @@ exports[`LocationDetails renders correctly 1`] = `
     <div
       class="forecast-summary__date"
     >
-       Date: 12122022 
+      Date: Thu 1st Jan
     </div>
     <div
       class="forecast-summary__temperature"
     >
-      Max temp: 23
+      Temp: 23
     </div>
     <div
       class="forecast-summary__description"
@@ -25,7 +25,10 @@ exports[`LocationDetails renders correctly 1`] = `
       class="forecast-summary__icon"
       data-testid="forecast-icon"
     >
-      Icon: 1234
+      <i
+        class="wi wi-day-sunny"
+        name="owm"
+      />
     </div>
   </div>
 </DocumentFragment>
