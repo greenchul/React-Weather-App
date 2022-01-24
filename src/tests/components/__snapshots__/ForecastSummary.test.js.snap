@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LocationDetails renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="forecast-summary"
+    data-testid="forecast-summary"
+  >
+    <div
+      class="forecast-summary__date"
+    >
+       Date: 12122022 
+    </div>
+    <div
+      class="forecast-summary__temperature"
+    >
+      Max temp: 23
+    </div>
+    <div
+      class="forecast-summary__description"
+    >
+      Description: Cloudy
+    </div>
+    <div
+      class="forecast-summary__icon"
+      data-testid="forecast-icon"
+    >
+      Icon: 1234
+    </div>
+  </div>
+</DocumentFragment>
+`;

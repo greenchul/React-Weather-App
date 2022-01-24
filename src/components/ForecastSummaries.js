@@ -1,15 +1,15 @@
 import React from "react";
 import propTypes from "prop-types";
 import ForecastSummary from "./ForecastSummary";
+import "../styles/ForecastSummaries.css";
 
 const ForecastSummaries = ({ forecasts }) => {
   return (
-    <div>
-      <h1>Forecast Summaries</h1>
+    <div className="forecast-summaries">
       {forecasts.map((singleForecast) => {
         return (
           <ForecastSummary
-            key={`${singleForecast.temperature.max}`}
+            key={`${singleForecast.date}`}
             singleForecast={singleForecast}
           />
         );

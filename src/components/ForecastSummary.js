@@ -4,8 +4,7 @@ import propTypes from "prop-types";
 const ForecastSummary = ({ singleForecast }) => {
   const { date, temperature, description, icon } = singleForecast;
   return (
-    <div className="forecast-summary">
-      <h2>This is the forecast summary!</h2>
+    <div className="forecast-summary" data-testid="forecast-summary">
       <div className="forecast-summary__date"> Date: {date} </div>
       <div className="forecast-summary__temperature">
         Max temp: {temperature.max}
@@ -13,7 +12,9 @@ const ForecastSummary = ({ singleForecast }) => {
       <div className="forecast-summary__description">
         Description: {description}
       </div>
-      <div className="forecast-summary__icon"> Icon: {icon} </div>
+      <div className="forecast-summary__icon" data-testid="forecast-icon">
+        Icon: {icon}
+      </div>
     </div>
   );
 };
