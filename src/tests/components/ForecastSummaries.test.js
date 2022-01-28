@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import ForecastSummaries from "../../components/ForecastSummaries";
 
 describe("ForecastSummaries", () => {
@@ -30,10 +30,9 @@ describe("ForecastSummaries", () => {
   });
 
   it("renders the correct number of ForecastSummary instances", () => {
-    const { getAllByTestId } = render(
-      <ForecastSummaries forecasts={validProps} />
-    );
+    render(<ForecastSummaries forecasts={validProps} />);
+    const forecastSummaryInstances = screen.getAllByTestId("forecast-summary");
 
-    expect(getAllByTestId("forecast-summary")).toHaveLength(2);
+    expect(forecastSummaryInstances).toHaveLength(2);
   });
 });

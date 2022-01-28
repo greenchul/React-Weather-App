@@ -9,17 +9,7 @@ exports[`LocationDetails renders correctly 1`] = `
     <div
       class="forecast-summary__date"
     >
-      Date: Thu 1st Jan
-    </div>
-    <div
-      class="forecast-summary__temperature"
-    >
-      Temp: 23
-    </div>
-    <div
-      class="forecast-summary__description"
-    >
-      Description: Cloudy
+      Mon 30th Apr
     </div>
     <div
       class="forecast-summary__icon"
@@ -29,6 +19,16 @@ exports[`LocationDetails renders correctly 1`] = `
         class="wi wi-day-sunny"
         name="owm"
       />
+    </div>
+    <div
+      class="forecast-summary__temperature"
+    >
+      23 °C
+    </div>
+    <div
+      class="forecast-summary__description"
+    >
+      Cloudy
     </div>
   </div>
 </DocumentFragment>

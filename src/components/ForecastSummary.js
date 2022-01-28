@@ -8,17 +8,15 @@ const ForecastSummary = ({ singleForecast }) => {
   return (
     <div className="forecast-summary" data-testid="forecast-summary">
       <div className="forecast-summary__date">
-        Date: {moment(date).format("ddd Do MMM")}
-      </div>
-      <div className="forecast-summary__temperature">
-        Temp: {temperature.max}
-      </div>
-      <div className="forecast-summary__description">
-        Description: {description}
+        {moment(date).format("ddd Do MMM")}
       </div>
       <div className="forecast-summary__icon" data-testid="forecast-icon">
         <WeatherIcon name="owm" iconId={icon} />
       </div>
+      <div className="forecast-summary__temperature">
+        {temperature.max} &deg;C
+      </div>
+      <div className="forecast-summary__description">{description}</div>
     </div>
   );
 };

@@ -12,17 +12,7 @@ exports[`ForecastSummaries renders correctly 1`] = `
       <div
         class="forecast-summary__date"
       >
-        Date: Thu 1st Jan
-      </div>
-      <div
-        class="forecast-summary__temperature"
-      >
-        Temp: 22
-      </div>
-      <div
-        class="forecast-summary__description"
-      >
-        Description: Stub description 1
+        Thu 1st Jan
       </div>
       <div
         class="forecast-summary__icon"
@@ -33,6 +23,16 @@ exports[`ForecastSummaries renders correctly 1`] = `
           name="owm"
         />
       </div>
+      <div
+        class="forecast-summary__temperature"
+      >
+        22 °C
+      </div>
+      <div
+        class="forecast-summary__description"
+      >
+        Stub description 1
+      </div>
     </div>
     <div
       class="forecast-summary"
@@ -41,17 +41,7 @@ exports[`ForecastSummaries renders correctly 1`] = `
       <div
         class="forecast-summary__date"
       >
-        Date: Thu 1st Jan
-      </div>
-      <div
-        class="forecast-summary__temperature"
-      >
-        Temp: 24
-      </div>
-      <div
-        class="forecast-summary__description"
-      >
-        Description: Stub description2
+        Thu 1st Jan
       </div>
       <div
         class="forecast-summary__icon"
@@ -61,6 +51,16 @@ exports[`ForecastSummaries renders correctly 1`] = `
           class="wi wi-day-sunny"
           name="owm"
         />
+      </div>
+      <div
+        class="forecast-summary__temperature"
+      >
+        24 °C
+      </div>
+      <div
+        class="forecast-summary__description"
+      >
+        Stub description2
       </div>
     </div>
   </div>
