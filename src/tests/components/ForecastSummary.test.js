@@ -5,7 +5,7 @@ import ForecastSummary from "../../components/ForecastSummary";
 describe("LocationDetails", () => {
   const singleForecast = {
     date: 1525046400000,
-    icon: "800",
+    icon: 800,
     temperature: {
       max: 23,
       min: 18,

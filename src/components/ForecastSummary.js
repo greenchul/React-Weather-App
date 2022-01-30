@@ -11,7 +11,7 @@ const ForecastSummary = ({ singleForecast, onSelect }) => {
         {moment(date).format("ddd Do MMM")}
       </div>
       <div className="forecast-summary__icon" data-testid="forecast-icon">
-        <WeatherIcon name="owm" iconId={icon} />
+        <WeatherIcon name="owm" iconId={icon.toString()} />
       </div>
       <div className="forecast-summary__temperature">
         {temperature.max} &deg;C
@@ -37,7 +37,7 @@ ForecastSummary.propTypes = {
       min: propTypes.number,
     }).isRequired,
     description: propTypes.string.isRequired,
-    icon: propTypes.string.isRequired,
+    icon: propTypes.number.isRequired,
   }).isRequired,
   onSelect: propTypes.func.isRequired,
 };
