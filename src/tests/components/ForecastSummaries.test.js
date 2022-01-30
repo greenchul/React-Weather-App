@@ -23,14 +23,26 @@ describe("ForecastSummaries", () => {
       },
     },
   ];
+  const onForecastSelect = () => {};
+
   it("renders correctly", () => {
-    const { asFragment } = render(<ForecastSummaries forecasts={validProps} />);
+    const { asFragment } = render(
+      <ForecastSummaries
+        forecasts={validProps}
+        onForecastSelect={onForecastSelect}
+      />
+    );
 
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders the correct number of ForecastSummary instances", () => {
-    render(<ForecastSummaries forecasts={validProps} />);
+    render(
+      <ForecastSummaries
+        forecasts={validProps}
+        onForecastSelect={onForecastSelect}
+      />
+    );
     const forecastSummaryInstances = screen.getAllByTestId("forecast-summary");
 
     expect(forecastSummaryInstances).toHaveLength(2);

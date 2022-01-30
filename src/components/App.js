@@ -21,11 +21,11 @@ const App = ({ forecasts, location }) => {
     <div className="App">
       <h1>Weather App</h1>
       <LocationDetails city={city} country={country} />
-      <ForecastSummaries forecasts={forecasts} />
-      <ForecastDetails
-        forecastDetail={selectedForecast}
-        handleForecastSelect={handleForecastSelect}
+      <ForecastSummaries
+        forecasts={forecasts}
+        onForecastSelect={handleForecastSelect}
       />
+      <ForecastDetails forecastDetail={selectedForecast} />
     </div>
   );
 };

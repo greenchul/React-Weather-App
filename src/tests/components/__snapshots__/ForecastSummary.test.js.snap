@@ -30,6 +30,12 @@ exports[`LocationDetails renders correctly 1`] = `
     >
       Cloudy
     </div>
+    <button
+      class="forecast-summary__button"
+      type="button"
+    >
+      More details
+    </button>
   </div>
 </DocumentFragment>
 `;

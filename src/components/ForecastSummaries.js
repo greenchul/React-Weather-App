@@ -3,7 +3,7 @@ import propTypes from "prop-types";
 import ForecastSummary from "./ForecastSummary";
 import "../styles/ForecastSummaries.css";
 
-const ForecastSummaries = ({ forecasts }) => {
+const ForecastSummaries = ({ forecasts, onForecastSelect }) => {
   return (
     <div className="forecast-summaries">
       {forecasts.map((singleForecast) => {
@@ -11,6 +11,7 @@ const ForecastSummaries = ({ forecasts }) => {
           <ForecastSummary
             key={`${singleForecast.date}`}
             singleForecast={singleForecast}
+            onSelect={onForecastSelect}
           />
         );
       })}
@@ -20,6 +21,7 @@ const ForecastSummaries = ({ forecasts }) => {
 
 ForecastSummaries.propTypes = {
   forecasts: propTypes.arrayOf(propTypes.shape()).isRequired,
+  onForecastSelect: propTypes.func.isRequired,
 };
 // eslint-disable-next-line react/require-default-props
 
