@@ -24,12 +24,12 @@ exports[`it renders correctly 1`] = `
         Search
       </button>
     </div>
-    <div
-      class="forecast-summaries"
-    />
     <div>
       Select a date
     </div>
+    <div
+      class="forecast-summaries"
+    />
   </div>
 </DocumentFragment>
 `;

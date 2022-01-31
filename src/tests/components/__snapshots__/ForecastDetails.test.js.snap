@@ -2,7 +2,9 @@
 
 exports[`ForecastDetails component renders correctly 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="forecast-details"
+  >
     <div
       class="forecast-details__date"
     >

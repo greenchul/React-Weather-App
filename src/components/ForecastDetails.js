@@ -1,11 +1,12 @@
 import React from "react";
 import propTypes from "prop-types";
 import moment from "moment";
+import "../styles/ForecastDetails.css";
 
 const ForecastDetails = ({ forecastDetail }) => {
   const { date, temperature, wind, humidity } = forecastDetail;
   return (
-    <div>
+    <div className="forecast-details">
       <div className="forecast-details__date">
         {moment(date).format("ddd Do MMM")}
       </div>

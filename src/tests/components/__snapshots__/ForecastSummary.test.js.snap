@@ -7,35 +7,48 @@ exports[`LocationDetails renders correctly 1`] = `
     data-testid="forecast-summary"
   >
     <div
-      class="forecast-summary__date"
+      class="forecast-summary__grid-container"
     >
-      Mon 30th Apr
+      <div
+        class="forecast-summary__grid-1"
+      >
+        <div
+          class="forecast-summary__date"
+        >
+          Mon 30th Apr
+        </div>
+        <div
+          class="forecast-summary__icon"
+          data-testid="forecast-icon"
+        >
+          <i
+            class="wi wi-day-sunny"
+            name="owm"
+          />
+        </div>
+        <div
+          class="forecast-summary__description"
+        >
+          Cloudy
+        </div>
+        <button
+          class="forecast-summary__button"
+          type="button"
+        >
+          More details
+        </button>
+      </div>
+      <div
+        class="forecast-summary__grid-2"
+      >
+        <div
+          class="forecast-summary__temperature"
+        >
+          23 °C
+        </div>
+      </div>
     </div>
-    <div
-      class="forecast-summary__icon"
-      data-testid="forecast-icon"
-    >
-      <i
-        class="wi wi-day-sunny"
-        name="owm"
-      />
-    </div>
-    <div
-      class="forecast-summary__temperature"
-    >
-      23 °C
-    </div>
-    <div
-      class="forecast-summary__description"
-    >
-      Cloudy
-    </div>
-    <button
-      class="forecast-summary__button"
-      type="button"
-    >
-      More details
-    </button>
+    <hr />
   </div>
 </DocumentFragment>
 `;

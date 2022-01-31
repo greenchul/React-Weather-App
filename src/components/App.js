@@ -12,7 +12,7 @@ const App = () => {
   const [location, setLocation] = useState({ city: "", country: "" });
   const [selectedDate, setSelectedDate] = useState(0);
   const [searchedLocation, setSearchedLocation] = useState("Manchester");
-  const [errorMessage, setErrorMessage] = useState(null);
+  const [errorMessage, setErrorMessage] = useState("");
   const { city, country } = location;
 
   useEffect(() => {
@@ -51,15 +51,15 @@ const App = () => {
         setSearchedLocation={setSearchedLocation}
         errorMessage={errorMessage}
       />
-      <ForecastSummaries
-        forecasts={forecasts}
-        onForecastSelect={handleForecastSelect}
-      />
       {selectedForecast ? (
         <ForecastDetails forecastDetail={selectedForecast} />
       ) : (
         <div>Select a date</div>
       )}
+      <ForecastSummaries
+        forecasts={forecasts}
+        onForecastSelect={handleForecastSelect}
+      />
     </div>
   );
 };
