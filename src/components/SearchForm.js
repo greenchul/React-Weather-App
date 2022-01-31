@@ -1,7 +1,11 @@
 import React from "react";
 import propTypes from "prop-types";
 
-const SearchForm = ({ handleSearchSelect, setSearchedLocation }) => {
+const SearchForm = ({
+  handleSearchSelect,
+  setSearchedLocation,
+  errorMessage,
+}) => {
   return (
     <div className="search-form">
       <input
@@ -20,6 +24,7 @@ const SearchForm = ({ handleSearchSelect, setSearchedLocation }) => {
       >
         Search
       </button>
+      {errorMessage && <div>{errorMessage}</div>}
     </div>
   );
 };
@@ -27,6 +32,7 @@ const SearchForm = ({ handleSearchSelect, setSearchedLocation }) => {
 SearchForm.propTypes = {
   handleSearchSelect: propTypes.func.isRequired,
   setSearchedLocation: propTypes.func.isRequired,
+  errorMessage: propTypes.string.isRequired,
 };
 
 export default SearchForm;

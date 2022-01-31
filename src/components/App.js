@@ -12,10 +12,17 @@ const App = () => {
   const [location, setLocation] = useState({ city: "", country: "" });
   const [selectedDate, setSelectedDate] = useState(0);
   const [searchedLocation, setSearchedLocation] = useState("Manchester");
+  const [errorMessage, setErrorMessage] = useState(null);
   const { city, country } = location;
 
   useEffect(() => {
-    getForecast(setForecasts, setLocation, setSelectedDate, searchedLocation);
+    getForecast(
+      setForecasts,
+      setLocation,
+      setSelectedDate,
+      searchedLocation,
+      setErrorMessage
+    );
   }, []);
 
   const handleForecastSelect = (date) => {
@@ -24,7 +31,13 @@ const App = () => {
 
   const handleSearchSelect = () => {
     console.log(`Searching for value`, searchedLocation);
-    getForecast(setForecasts, setLocation, setSelectedDate, searchedLocation);
+    getForecast(
+      setForecasts,
+      setLocation,
+      setSelectedDate,
+      searchedLocation,
+      setErrorMessage
+    );
   };
   const selectedForecast = forecasts.find(
     (forecast) => forecast.date === selectedDate
@@ -36,6 +49,7 @@ const App = () => {
       <SearchForm
         handleSearchSelect={handleSearchSelect}
         setSearchedLocation={setSearchedLocation}
+        errorMessage={errorMessage}
       />
       <ForecastSummaries
         forecasts={forecasts}
