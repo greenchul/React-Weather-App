@@ -1,4 +1,3 @@
-/* eslint-disable  no-unused-vars */
 import "../styles/App.css";
 import React, { useState, useEffect } from "react";
 import getForecast from "../requests/getForecast";
