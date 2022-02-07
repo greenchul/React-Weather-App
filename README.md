@@ -12,7 +12,7 @@ The project uses the React Testing Library and Jest for testing.
 - `cd` in to repo
 - Run `npm install`
 - Run `npm start` to start the project
-- un `npm test` to run the tests
+- Run `npm test` to run the tests
 
 ## Getting Started with Create React App
 
